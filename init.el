@@ -46,7 +46,9 @@
    mac-option-modifier 'meta
    mac-left-option-modifier 'meta
    mac-right-option-modifier 'meta
-   mac-right-option-modifier 'nil))
+   ;; mac-right-option-modifier 'nil
+   )
+  )
 
 (global-set-key (kbd "s-=") 'text-scale-increase)
 (global-set-key (kbd "s--") 'text-scale-decrease)
@@ -572,7 +574,7 @@
 
 ;; slimhtml is an emacs org mode export backend. It is a set of transcoders for common org elements which outputs minimal HTML.
 (use-package htmlize)
-(use-package ox-slimhtml)
+;; (use-package ox-slimhtml)
 
 (defun org-html-export-as-slimhtml
   (&optional async subtreep visible-only body-only ext-plist)
